@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Trophy, Medal, Award, Building2 } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
-import { fest, NOT_PROVIDED } from "@/data/fest";
+import { fest } from "@/data/fest";
 
 export const Route = createFileRoute("/prizes")({
   head: () => ({
@@ -35,7 +35,7 @@ function PrizesPage() {
         {[
           { icon: Trophy, place: "Winner", note: "Cash prize + trophy" },
           { icon: Medal, place: "Runner-up", note: "Cash prize + trophy" },
-          { icon: Award, place: "Amount", note: NOT_PROVIDED },
+          { icon: Award, place: "Amount", note: "Cash prize + trophy" },
         ].map((p, i) => (
           <Reveal key={p.place} delay={i * 90}>
             <div className="h-full rounded-2xl border border-border bg-card/60 p-8 text-center">
@@ -51,6 +51,9 @@ function PrizesPage() {
         <h2 className="display text-4xl">Sponsors</h2>
         <div className="mt-6 rounded-2xl border border-dashed border-border bg-card/40 p-10 text-center">
           <Building2 className="mx-auto h-8 w-8 text-accent" aria-hidden="true" />
+          <p className="mt-4 text-muted-foreground">
+            Sponsored by ANANDATHIRTHA-PRE-UNIVERSITY-COLLEGE.
+          </p>
           <p className="mt-4 text-muted-foreground">
             No sponsor details are printed on the official pamphlet — {NOT_PROVIDED}.
           </p>
