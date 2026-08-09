@@ -54,9 +54,7 @@ function PrizesPage() {
           <p className="mt-4 text-muted-foreground">
             Sponsored by ANANDATHIRTHA-PRE-UNIVERSITY-COLLEGE.
           </p>
-          <p className="mt-4 text-muted-foreground">
-            No sponsor details are printed on the official pamphlet — {NOT_PROVIDED}.
-          </p>
+          
           <p className="mt-2 text-sm text-muted-foreground">
             To partner with Impressions {fest.year}, write to{" "}
             <a className="text-accent hover:underline" href={`mailto:${fest.email}`}>
