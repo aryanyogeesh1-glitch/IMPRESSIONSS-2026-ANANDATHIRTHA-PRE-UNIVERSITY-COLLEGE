@@ -2,7 +2,8 @@
 // Anything not printed on the pamphlet is marked NOT_PROVIDED — never invented.
 
 export const NOT_PROVIDED = "[CONTENT NOT PROVIDED]";
-export const REGISTRATION_LINK = "[REGISTRATION LINK]"; // No URL printed on the pamphlet — QR code only.
+export const REGISTRATION_LINK =
+  "https://docs.google.com/forms/d/e/1FAIpQLSflXOKZr2cywcUVIrKza9PpU4WvU2a9NxCepKjk0eVECtPcRg/viewform";
 
 export const fest = {
   name: "IMPRESSIONS",
