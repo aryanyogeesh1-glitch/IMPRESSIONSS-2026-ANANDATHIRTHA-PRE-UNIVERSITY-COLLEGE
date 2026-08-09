@@ -57,8 +57,7 @@ function VenuePage() {
           <div className="flex h-full flex-col items-center justify-center rounded-2xl border border-accent/30 bg-card p-8 text-center">
             <Navigation className="h-6 w-6 text-accent" aria-hidden="true" />
               <a
-                href="google.com/maps/place/Anandathirtha+PU+College/@13.2718493,74.7870131,17z/data=!3m1!4b1!4m6!3m5!1s0x3bbca549e003ea63:0x6e588245cd8c351f!8m2!3d13.2718441!4d74.789588!16s%2Fg%2F11hzwh2j5w?authuser=0&entry=tts&g_ep=EgoyMDI2MDgwNS4xIPu8ASoASAFQAw%3D%3D&skid=2496a81f-a1dc-4bb5-9866-e34ccfb15ecc"
-                target="_blank"
+                href="https://maps.app.goo.gl/gY5FyMXi6KE388iT8"
                 rel="noopener noreferrer"
                 aria-label="Open Anandathirtha PU College location in Google Maps"
               >
