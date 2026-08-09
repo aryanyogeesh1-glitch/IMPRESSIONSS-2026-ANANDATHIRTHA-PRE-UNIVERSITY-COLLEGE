@@ -110,12 +110,14 @@ function Index() {
               >
                 Register Now <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </Link>
-              <Link
-                to="/schedule"
-                className="inline-flex min-h-12 items-center justify-center rounded-full border border-accent/60 px-7 font-bold text-accent transition-colors hover:bg-accent hover:text-accent-foreground"
-              >
-                See the schedule
-              </Link>
+              <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSflXOKZr2cywcUVIrKza9PpU4WvU2a9NxCepKjk0eVECtPcRg/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-primary px-7 font-bold text-primary-foreground transition-transform hover:scale-[1.03]"
+            >
+              Register Now <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </a>
             </div>
           </Reveal>
           <Reveal delay={120}>
