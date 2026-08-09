@@ -19,17 +19,20 @@ export const Route = createFileRoute("/schedule")({
 
 function SchedulePage() {
   return (
-    <div className="mx-auto max-w-4xl px-5 pb-24 pt-32 lg:px-8">
-      <Reveal>
-        <p className="text-xs font-bold uppercase tracking-[0.3em] text-accent">
+    <div className="mx-auto max-w-5xl px-6 py-16">
+      <div className="text-center">
+        <p className="text-xs uppercase tracking-[0.3em] text-accent">
           {fest.date} · {fest.day}
         </p>
-        <h1 className="display mt-3 text-5xl sm:text-7xl">Schedule</h1>
-        <p className="mt-5 max-w-2xl text-muted-foreground">
-          All events take place on a single day at {fest.college}. Exact reporting times are not
-          printed on the official pamphlet — they will be announced by the coordinators.
+
+        <h1 className="display mt-3 text-5xl">Schedule</h1>
+
+        <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-muted-foreground">
+          All events take place on a single day at {fest.college}. Exact
+          reporting times are not printed on the official pamphlet — they will
+          be announced by the coordinators.
         </p>
-      </Reveal>
+      </div>
 
       <ol className="mt-14 space-y-4 border-l border-border pl-6">
         {events.map((event, i) => (
@@ -39,18 +42,25 @@ function SchedulePage() {
                 aria-hidden="true"
                 className="absolute -left-[1.9rem] top-8 h-3 w-3 rounded-full bg-accent ring-4 ring-background"
               />
-                  <div>
-                    <p className="display text-2xl">{event.name}</p>
-                    <p className="text-xs uppercase tracking-[0.22em] text-accent">
-                      {event.subtitle}
-                    </p>
-                    <p className="mt-2 text-sm text-muted-foreground">
-                      {event.category} · {event.teamSize}
-                    </p>
-                  </div>
+
+              <div>
+                <p className="display text-2xl">{event.name}</p>
+
+                <p className="text-xs uppercase tracking-[0.22em] text-accent">
+                  {event.subtitle}
+                </p>
+
+                <p className="mt-2 text-sm text-muted-foreground">
+                  {event.category} · {event.teamSize}
+                </p>
               </div>
             </li>
           </Reveal>
+        ))}
+      </ol>
+    </div>
+  );
+}
         ))}
       </ol>
     </div>
