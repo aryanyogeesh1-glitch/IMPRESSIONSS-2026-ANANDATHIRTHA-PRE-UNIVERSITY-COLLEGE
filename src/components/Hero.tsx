@@ -61,12 +61,14 @@ export function Hero() {
         </dl>
 
         <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-          <Link
-            to="/register"
-            className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-primary px-7 font-bold text-primary-foreground shadow-[var(--shadow-lift)] transition-transform hover:scale-[1.03]"
-          >
-            Register Now <ArrowRight className="h-4 w-4" aria-hidden="true" />
-          </Link>
+          <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSflXOKZr2cywcUVIrKza9PpU4WvU2a9NxCepKjk0eVECtPcRg/viewform"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-primary px-7 font-bold text-primary-foreground shadow-[var(--shadow-lift)] transition-transform hover:scale-[1.03]"
+        >
+          Register Now <ArrowRight className="h-4 w-4" aria-hidden="true" />
+        </a>
           <Link
             to="/events"
             className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-accent/60 px-7 font-bold text-accent transition-colors hover:bg-accent hover:text-accent-foreground"
