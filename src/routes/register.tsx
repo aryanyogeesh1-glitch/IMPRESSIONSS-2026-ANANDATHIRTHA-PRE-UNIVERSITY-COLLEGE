@@ -32,14 +32,19 @@ function RegisterPage() {
         <Reveal>
           <div className="h-full rounded-3xl border border-accent/30 bg-card p-8 text-center">
             <QrCode className="mx-auto h-6 w-6 text-accent" aria-hidden="true" />
+            <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSflXOKZr2cywcUVIrKza9PpU4WvU2a9NxCepKjk0eVECtPcRg/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open IMPRESSIONS 2026 registration form"
+            className="inline-block"
+          >
             <img
               src="/registration-qr.jpg"
-              alt="Official QR code to register for Impressions 2026"
-              width={260}
-              height={260}
-              loading="lazy"
-              className="mx-auto mt-6 h-64 w-64 rounded-xl object-contain"
+              alt="QR code for IMPRESSIONS 2026 registration"
+              className="cursor-pointer rounded-xl object-contain transition-transform hover:scale-105"
             />
+          </a>
             <p className="mt-5 text-xs uppercase tracking-[0.24em] text-accent">
               Scan the official QR to register
             </p>
