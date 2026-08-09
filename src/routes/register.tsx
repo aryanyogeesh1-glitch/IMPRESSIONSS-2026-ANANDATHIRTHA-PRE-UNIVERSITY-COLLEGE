@@ -48,9 +48,6 @@ function RegisterPage() {
             <p className="mt-5 text-xs uppercase tracking-[0.24em] text-accent">
               Scan the official QR to register
             </p>
-            <p className="mt-3 text-sm text-muted-foreground">
-              A direct registration link is not printed on the pamphlet — {NOT_PROVIDED}.
-            </p>
           </div>
         </Reveal>
 
