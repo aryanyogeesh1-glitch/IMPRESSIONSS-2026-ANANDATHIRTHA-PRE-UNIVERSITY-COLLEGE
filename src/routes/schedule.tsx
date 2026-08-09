@@ -48,10 +48,6 @@ function SchedulePage() {
                       {event.category} · {event.teamSize}
                     </p>
                   </div>
-                <span className="flex shrink-0 items-center gap-2 rounded-full border border-border px-3 py-1 text-xs text-muted-foreground">
-                  <Clock className="h-3.5 w-3.5" aria-hidden="true" />
-                  {NOT_PROVIDED}
-                </span>
               </div>
             </li>
           </Reveal>
