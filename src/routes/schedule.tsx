@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Reveal } from "@/components/Reveal";
 import { events, fest } from "@/data/fest";
+
 export const Route = createFileRoute("/schedule")({
   head: () => ({
     meta: [
@@ -10,8 +11,14 @@ export const Route = createFileRoute("/schedule")({
         content:
           "Impressions 2026 runs on Friday, August 21, 2026 at Anandathirtha PU College, Udupi. Event order and reporting details.",
       },
-      { property: "og:title", content: "Schedule — Impressions 2026" },
-      { property: "og:description", content: "All seven events on Friday, August 21, 2026." },
+      {
+        property: "og:title",
+        content: "Schedule — Impressions 2026",
+      },
+      {
+        property: "og:description",
+        content: "All seven events on Friday, August 21, 2026.",
+      },
     ],
   }),
   component: SchedulePage,
@@ -56,11 +63,6 @@ function SchedulePage() {
               </div>
             </li>
           </Reveal>
-        ))}
-      </ol>
-    </div>
-  );
-}
         ))}
       </ol>
     </div>
