@@ -4,7 +4,7 @@ import { Hero } from "@/components/Hero";
 import { Reveal } from "@/components/Reveal";
 import { EventCard } from "@/components/EventCard";
 import { fest, events, coordinators } from "@/data/fest";
-.
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
