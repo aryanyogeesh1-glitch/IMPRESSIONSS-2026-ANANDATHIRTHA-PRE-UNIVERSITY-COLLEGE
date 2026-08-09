@@ -57,17 +57,16 @@ function VenuePage() {
           <div className="flex h-full flex-col items-center justify-center rounded-2xl border border-accent/30 bg-card p-8 text-center">
             <Navigation className="h-6 w-6 text-accent" aria-hidden="true" />
               <a
-                href="https://maps.app.goo.gl/gY5FyMXi6KE388iT8"
-                rel="noopener noreferrer"
-                aria-label="Open Anandathirtha PU College location in Google Maps"
-              >
+              href="https://www.google.com/maps/search/?api=1&query=13.2718441,74.789588"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src="/location-qr.png"
-                alt="QR code with directions to Anandathirtha PU College"
+                alt="Location of Anandathirtha PU College"
                 width={224}
                 height={224}
-                loading="lazy"
-                className="mt-6 h-52 w-52 cursor-pointer rounded-xl object-contain transition-transform hover:scale-105"
+                className="mt-6 h-52 w-52 cursor-pointer rounded-xl object-contain"
               />
             </a>
             <p className="mt-5 text-xs uppercase tracking-[0.24em] text-accent">
