@@ -103,14 +103,8 @@ function Index() {
             <p className="text-xs font-bold uppercase tracking-[0.3em] text-accent">Registration</p>
             <h2 className="display mt-3 text-4xl sm:text-6xl">{fest.prizeHeadline}</h2>
             <p className="mt-5 max-w-xl text-muted-foreground">{fest.eligibility}</p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link
-                to="/register"
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-primary px-7 font-bold text-primary-foreground transition-transform hover:scale-[1.03]"
-              >
-                Register Now <ArrowRight className="h-4 w-4" aria-hidden="true" />
-              </Link>
-              <a
+            <div className="mt-8">
+            <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSflXOKZr2cywcUVIrKza9PpU4WvU2a9NxCepKjk0eVECtPcRg/viewform"
               target="_blank"
               rel="noopener noreferrer"
@@ -118,18 +112,25 @@ function Index() {
             >
               Register Now <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </a>
-            </div>
+          </div>
           </Reveal>
           <Reveal delay={120}>
             <div className="mx-auto w-fit rounded-3xl border border-accent/30 bg-card p-6 text-center">
+              <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSflXOKZr2cywcUVIrKza9PpU4WvU2a9NxCepKjk0eVECtPcRg/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Register for Impressions 2026"
+            >
               <img
                 src="/registration-qr.jpg"
                 alt="QR code to register for Impressions 2026"
                 width={240}
                 height={240}
                 loading="lazy"
-                className="h-56 w-56 rounded-xl object-contain"
+                className="h-56 w-56 rounded-xl object-contain transition-transform hover:scale-[1.02]"
               />
+            </a>
               <p className="mt-4 text-xs uppercase tracking-[0.24em] text-accent">
                 Scan to register
               </p>
