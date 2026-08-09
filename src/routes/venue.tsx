@@ -60,13 +60,15 @@ function VenuePage() {
               href="https://www.google.com/maps/search/?api=1&query=13.2718441,74.789588"
               target="_blank"
               rel="noopener noreferrer"
+              className="inline-block"
             >
               <img
                 src="/location-qr.png"
-                alt="Location of Anandathirtha PU College"
+                alt="Location QR code for Anandathirtha PU College"
                 width={224}
                 height={224}
-                className="mt-6 h-52 w-52 cursor-pointer rounded-xl object-contain"
+                loading="lazy"
+                className="mt-6 h-52 w-52 cursor-pointer rounded-xl object-contain transition-transform hover:scale-105"
               />
             </a>
             <p className="mt-5 text-xs uppercase tracking-[0.24em] text-accent">
