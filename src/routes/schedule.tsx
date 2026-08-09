@@ -1,8 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Clock } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
-import { events, fest, NOT_PROVIDED } from "@/data/fest";
-
+import { events, fest } from "@/data/fest";
 export const Route = createFileRoute("/schedule")({
   head: () => ({
     meta: [
@@ -41,16 +39,15 @@ function SchedulePage() {
                 aria-hidden="true"
                 className="absolute -left-[1.9rem] top-8 h-3 w-3 rounded-full bg-accent ring-4 ring-background"
               />
-              <div className="grid grid-cols-[minmax(0,1fr)_auto] items-start gap-4">
-                <div className="min-w-0">
-                  <p className="display text-2xl">{event.name}</p>
-                  <p className="text-xs uppercase tracking-[0.22em] text-accent">
-                    {event.subtitle}
-                  </p>
-                  <p className="mt-2 text-sm text-muted-foreground">
-                    {event.category} · {event.teamSize}
-                  </p>
-                </div>
+                  <div>
+                    <p className="display text-2xl">{event.name}</p>
+                    <p className="text-xs uppercase tracking-[0.22em] text-accent">
+                      {event.subtitle}
+                    </p>
+                    <p className="mt-2 text-sm text-muted-foreground">
+                      {event.category} · {event.teamSize}
+                    </p>
+                  </div>
                 <span className="flex shrink-0 items-center gap-2 rounded-full border border-border px-3 py-1 text-xs text-muted-foreground">
                   <Clock className="h-3.5 w-3.5" aria-hidden="true" />
                   {NOT_PROVIDED}
